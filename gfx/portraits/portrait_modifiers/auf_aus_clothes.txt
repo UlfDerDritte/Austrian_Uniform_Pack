@@ -514,15 +514,71 @@
 
     austrian_navy_clothes = {
         dna_modifiers = {
+            ### REMOVE
+            accessory = {
+               mode = add
+               gene = top_layer
+               template = no_top_layer
+               range = { 0 1 }
+            }
             accessory = {
                 mode = add
                 gene = coats
+                template  = no_coat
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = no_legwear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = epaulettes
+                template = no_epaulette
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = aiguillettes
+                template  = no_aiguillettes
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = belts
+                template  = no_belt
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = medals
+                template = no_medals
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = sashes
+                template = no_sash
+                range = { 0 1 }
+            }
+            ### ADD
+            accessory = {
+                mode = add
+                gene = aus_coats
                 template = austrian_coats
                 range = { 0.5 1 } # For the randomness to work correctly
             }
             accessory = {
                 mode = add
-                gene = legwear
+                gene = aus_legwear
                 template = austrian_legwear
                 range = { 0.34 1 } # For the randomness to work correctly
             }
@@ -531,18 +587,6 @@
                 gene = epaulettes
                 template = all_epaulettes
                 accessory = male_epaulettes_04
-            }
-            accessory = {
-                mode = add
-                gene = sashes
-                template = no_sash
-                range = { 1 1 } # For the randomness to work correctly
-            }
-            accessory = {
-                mode = add
-                gene = belts
-                template = no_belt
-                range = { 1 1 } # For the randomness to work correctly
             }
         }
 

@@ -160,4 +160,40 @@
             }
         }
     }
+
+    austrian_navy_headgear = {
+        dna_modifiers = {
+            ### REMOVE
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+            ### ADD
+            accessory = {
+                mode = add
+                gene = aus_headgear
+                template = austrian_military_headgear
+                range = { 0.8 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10001
+                austrian_clothes_trigger = yes
+                late_military_clothes_trigger = no
+                OR = {
+                    scope:character = {
+                        has_role = admiral
+                    }
+                    AND = {
+                        politician_clothes_trigger = yes
+                        armed_forces_clothes_trigger = yes
+                    }
+                }
+            }
+        }
+    }
 }

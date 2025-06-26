@@ -3,20 +3,6 @@ ulf_aus_hairstyles = {
 	selection_behavior = weighted_random
 	fallback = no_hair
 
-    no_hair = {
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = hairstyles
-                template = no_hairstyles
-                range = { 0 1 } # For the randomness to work correctly
-            }
-        }
-        weight = {
-            base = 0
-        }
-    }
-
     adult_franz_joseph = {
         dna_modifiers = {
             accessory = {
