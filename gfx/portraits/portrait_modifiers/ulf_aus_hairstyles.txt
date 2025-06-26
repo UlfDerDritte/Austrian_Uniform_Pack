@@ -19,7 +19,7 @@ ulf_aus_hairstyles = {
 
                 scope:character ?= {
                     has_template = aus_franz_josef_I_habsburg_template
-                    age >= 30
+                    age >= 40
                 }
             }
         }

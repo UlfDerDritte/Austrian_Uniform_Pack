@@ -40,6 +40,21 @@
                 boy = male
                 girl = female
             }
+
+            austrian_late_coats = {
+                index = 2
+                male = {
+                    # 1 = male_coat_austrian_03
+                    3 = male_coat_austrian_late_06
+                    # 1 = male_coat_austrian_10
+                }
+
+                female = {
+                    1 = female_outfit_european_common_01 # fallback
+                }
+                boy = male
+                girl = female
+            }
         }
 
         #####################################

@@ -60,10 +60,16 @@ ulf_aus_beards = {
     adult_franz_joseph = {
         dna_modifiers = {
             accessory = {
+                mode = add
+                gene = aus_beards
+                template = austrian_beards_military
+                accessory = male_beard_european_11_alt
+            }
+            accessory = {
                 mode = replace
                 gene = beards
-                template = european_beards
-                accessory = male_beard_european_11_alt
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
             }
             accessory = {
                 mode = replace

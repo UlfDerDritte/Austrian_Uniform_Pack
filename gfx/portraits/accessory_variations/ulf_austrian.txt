@@ -89,6 +89,23 @@ variation = {
 }
 
 variation = {
+	name = "male_coat_austrian_late_06"
+
+
+	pattern = {
+		weight = 1
+
+		r = { textures = "generic_cotton_standard_fine_01" 		layout = "plain_fabric_layout" }
+		g = { textures = "generic_cotton_standard_fine_01" 		layout = "plain_fabric_layout" }
+		b = { textures = "generic_silk_standard_plain_01" 		layout = "plain_fabric_layout" }
+		a = { textures = "generic_cotton_standard_fine_01"		layout = "plain_fabric_layout" }
+	}
+
+
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/color_palettes/color_palette_coats_austrian_late.dds" }
+}
+
+variation = {
 	name = "male_coat_austrian_10"
 
 

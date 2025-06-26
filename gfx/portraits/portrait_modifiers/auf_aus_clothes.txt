@@ -3,110 +3,6 @@
     selection_behavior = weighted_random
     fallback = default_clothes
 
-    austrian_clothes = {
-        dna_modifiers = {
-            ### REMOVE
-            accessory = {
-                mode = add
-                gene = top_layer
-                template = no_top_layer
-                range = { 0 1 }
-            }
-            accessory = {
-                mode = add
-                gene = coats
-                template  = no_coat
-                range = { 0 1 }
-            }
-            accessory = {
-                mode = add
-                gene = legwear
-                template = no_legwear
-                range = { 0 1 }
-            }
-            accessory = {
-                mode = add
-                gene = epaulettes
-                template = no_epaulette
-                range = { 0 1 }
-            }
-            accessory = {
-                mode = add
-                gene = aiguillettes
-                template  = no_aiguillettes
-                range = { 0 1 }
-            }
-            accessory = {
-                mode = add
-                gene = belts
-                template  = no_belt
-                range = { 0 1 }
-            }
-            accessory = {
-                mode = add
-                gene = medals
-                template = no_medals
-                range = { 0 1 }
-            }
-            accessory = {
-                mode = add
-                gene = headgear
-                template = no_headgear
-                range = { 0 1 }
-            }
-            accessory = {
-                mode = add
-                gene = sashes
-                template = no_sash
-                range = { 0 1 }
-            }
-            ### ADD
-            accessory = {
-                mode = add
-                gene = aus_coats
-                template = austrian_coats
-                range = { 0 0.5 } # For the randomness to work correctly
-            }
-            accessory = {
-                mode = add
-                gene = aus_legwear
-                template = austrian_legwear
-                accessory = male_legwear_european_01_red
-            }
-            accessory = {
-                mode = add
-                gene = belts
-                template = generic_belts
-                range = { 0 0.49 } # For the randomness to work correctly
-            }
-        }
-        weight = {
-            base = 0
-            modifier = {
-                add = 10001
-                ulf_austrian_clothes_trigger = yes
-                scope:character ?= {
-                    age > define:NCharacters|ADULT_AGE
-                    OR = {
-                        AND = {
-                            OR = {
-                                is_ruler = yes
-                                is_heir = yes
-                            }
-                            home_country ?= {
-                                has_law = law_type:law_monarchy
-                            }
-                        }
-                        AND = {
-                            has_role = politician
-                            is_interest_group_type = ig_armed_forces
-                        }
-                    }
-                }
-            }
-        }
-    }
-
     austrian_monarch = {
         dna_modifiers = {
             ### REMOVE
@@ -183,12 +79,30 @@
                 template = generic_belts
                 accessory = male_belt_generic_01
             }
+            accessory = {
+                mode = add
+                gene = medals
+                template = generic_medals
+                accessory = male_medals_generic_01_03
+            }
+            accessory = {
+                mode = add
+                gene = aus_necklaces
+                template = necklace_golden_fleece
+                accessory = male_necklace_golden_fleece
+            }
+            accessory = {
+                mode = add
+                gene = aus_sashes
+                template = austrian_sashes
+                accessory = male_sash_austrian
+            }
         }
         weight = {
             base = 0
             modifier = {
-                add = 10002
-                ulf_austrian_clothes_trigger = yes
+                add = 20000
+                ulf_austrian_clothes_trigger_strict = yes
                 scope:character ?= {
                     age > define:NCharacters|ADULT_AGE
                     AND = {
@@ -204,6 +118,238 @@
             }
         }
     }
+
+    austrian_monarch = {
+        dna_modifiers = {
+            ### REMOVE
+            accessory = {
+                mode = add
+                gene = top_layer
+                template = no_top_layer
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = coats
+                template  = no_coat
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = no_legwear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = epaulettes
+                template = no_epaulette
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = aiguillettes
+                template  = no_aiguillettes
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = belts
+                template  = no_belt
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = medals
+                template = no_medals
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = sashes
+                template = no_sash
+                range = { 0 1 }
+            }
+            ### ADD
+            accessory = {
+                mode = add
+                gene = aus_coats
+                template = austrian_late_coats
+                accessory = male_coat_austrian_late_06
+            }
+            accessory = {
+                mode = add
+                gene = aus_legwear
+                template = austrian_legwear
+                accessory = male_legwear_european_01_black
+            }
+            accessory = {
+                mode = add
+                gene = medals
+                template = generic_medals
+                accessory = male_medals_generic_01_03
+            }
+            accessory = {
+                mode = add
+                gene = aus_necklaces
+                template = necklace_golden_fleece
+                accessory = male_necklace_golden_fleece
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 20001
+                ulf_austrian_clothes_trigger_strict = yes
+                ulf_late_military_clothes_trigger = yes
+                scope:character ?= {
+                    age > define:NCharacters|ADULT_AGE
+                    AND = {
+                        OR = {
+                            is_ruler = yes
+                            is_heir = yes
+                        }
+                        home_country ?= {
+                            has_law = law_type:law_monarchy
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ### Army Uniforms
+
+    austrian_clothes = {
+        dna_modifiers = {
+            ### REMOVE
+            accessory = {
+                mode = add
+                gene = top_layer
+                template = no_top_layer
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = coats
+                template  = no_coat
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = no_legwear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = epaulettes
+                template = no_epaulette
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = aiguillettes
+                template  = no_aiguillettes
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = belts
+                template  = no_belt
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = medals
+                template = no_medals
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = sashes
+                template = no_sash
+                range = { 0 1 }
+            }
+            ### ADD
+            accessory = {
+                mode = add
+                gene = aus_coats
+                template = austrian_coats
+                range = { 0 0.5 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = aus_legwear
+                template = austrian_legwear
+                accessory = male_legwear_european_01_red
+            }
+            accessory = {
+                mode = add
+                gene = belts
+                template = generic_belts
+                range = { 0 0.49 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = medals
+                template = generic_medals
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = aus_sashes
+                template = austrian_sashes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10001
+                ulf_austrian_clothes_trigger = yes
+                # ulf_late_military_clothes_trigger = no
+                scope:character ?= {
+                    age > define:NCharacters|ADULT_AGE
+                    OR = {
+                        AND = {
+                            ulf_austrian_clothes_trigger = yes
+                            scope:character ?= {
+                                age >= define:NCharacters|ADULT_AGE
+                                has_role = general
+                            }
+                        }
+                        AND = {
+                            has_role = politician
+                            is_interest_group_type = ig_armed_forces
+                        }
+                        AND = {
+                            OR = {
+                                is_ruler = yes
+                                is_heir = yes
+                            }
+                            home_country ?= {
+                                has_law = law_type:law_monarchy
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
     austrian_clothes_late = {
         dna_modifiers = {
@@ -293,18 +439,37 @@
             modifier = {
                 add = 12000
                 has_dlc_feature = ep1_cosmetics
-                ulf_late_military_clothes_trigger = yes
                 ulf_austrian_clothes_trigger = yes
+                ulf_late_military_clothes_trigger = yes
                 scope:character ?= {
                     age > define:NCharacters|ADULT_AGE
-                    AND = {
-                        has_role = politician
-                        is_interest_group_type = ig_armed_forces
+                    OR = {
+                        AND = {
+                            ulf_austrian_clothes_trigger = yes
+                            scope:character ?= {
+                                age >= define:NCharacters|ADULT_AGE
+                                has_role = general
+                            }
+                        }
+                        AND = {
+                            has_role = politician
+                            is_interest_group_type = ig_armed_forces
+                            NAND = {
+                                OR = {
+                                    is_ruler = yes
+                                    is_heir = yes
+                                }
+                                home_country ?= {
+                                    has_law = law_type:law_monarchy
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
+
     austrian_soldier_clothes = {
         dna_modifiers = {
             ### REMOVE
@@ -512,6 +677,215 @@
         }
     }
 
+    austrian_officer_clothes = {
+        dna_modifiers = {
+            ### REMOVE
+            accessory = {
+                mode = add
+                gene = top_layer
+                template = no_top_layer
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = coats
+                template  = no_coat
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = no_legwear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = epaulettes
+                template = no_epaulette
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = aiguillettes
+                template  = no_aiguillettes
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = belts
+                template  = no_belt
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = medals
+                template = no_medals
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = sashes
+                template = no_sash
+                range = { 0 1 }
+            }
+            ### ADD
+            accessory = {
+                mode = add
+                gene = aus_coats
+                template = austrian_coats
+                range = { 0 0.5 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = aus_legwear
+                template = austrian_legwear
+                accessory = male_legwear_european_01_red
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 10000
+                OR = {
+                    AND = {
+                        ulf_austrian_clothes_pop_trigger = yes
+                        OR = {
+                            soldier_clothes_pop_trigger = yes
+                            officers_clothes_pop_trigger = yes
+                        }
+                    }
+                    AND = {
+                        ulf_austrian_clothes_trigger = yes
+                        scope:character ?= {
+                            age >= define:NCharacters|ADULT_AGE
+                            has_role = general
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    austrian_officer_clothes_late = {
+        dna_modifiers = {
+            ### REMOVE
+            accessory = {
+                mode = add
+                gene = top_layer
+                template = no_top_layer
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = coats
+                template  = no_coat
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = no_legwear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = epaulettes
+                template = no_epaulette
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = aiguillettes
+                template  = no_aiguillettes
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = belts
+                template  = no_belt
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = medals
+                template = no_medals
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = sashes
+                template = no_sash
+                range = { 0 1 }
+            }
+            ### ADD
+            accessory = {
+                mode = add
+                gene = aus_coats
+                template = male_coat_late_austrian
+                accessory = male_coat_late_austrian_military_01
+            }
+            accessory = {
+                mode = add
+                gene = aus_epaulettes
+                template = late_military_epaulettes_austrian
+                accessory = male_epaulettes_late_austrian_military_01
+            }
+            accessory = {
+                mode = add
+                gene = belts
+                template = late_military_belts
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = aus_legwear
+                template = european_late_military_legwear_austrian
+                accessory = male_legwear_late_austrian_military_01
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 12000
+                has_dlc_feature = ep1_cosmetics
+                OR = {
+                    AND = {
+                        ulf_late_military_clothes_pop_trigger = yes
+                        ulf_austrian_clothes_pop_trigger = yes
+                        OR = {
+                            soldier_clothes_pop_trigger = yes
+                            officers_clothes_pop_trigger = yes
+                        }
+                    }
+                    AND = {
+                        ulf_late_military_clothes_trigger = yes
+                        ulf_austrian_clothes_trigger = yes
+                        scope:character ?= {
+                            age >= define:NCharacters|ADULT_AGE
+                            has_role = general
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ### NAVY
+
     austrian_navy_clothes = {
         dna_modifiers = {
             ### REMOVE
@@ -587,6 +961,12 @@
                 gene = epaulettes
                 template = all_epaulettes
                 accessory = male_epaulettes_04
+            }
+            accessory = {
+                mode = add
+                gene = medals
+                template = generic_medals
+                range = { 0 1 } # For the randomness to work correctly
             }
         }
 

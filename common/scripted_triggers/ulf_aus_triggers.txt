@@ -15,6 +15,19 @@ ulf_austrian_clothes_trigger = {
 		}
 	}
 }
+ulf_austrian_clothes_trigger_strict = {
+	scope:character ?= {
+		home_country ?= {
+			OR = {
+				AND = {
+					c:AUS ?= this
+					is_subject = no # preventing uniform conflicts if AUS becomes a subject of another country with puppet uniforms
+				}
+				was_formed_from = AUS
+			}
+		}
+	}
+}
 
 ulf_austrian_clothes_pop_trigger = {
 	scope:pop ?= {
