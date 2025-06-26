@@ -25,8 +25,8 @@
             base = 0
             modifier = {
                 add = 10001
-                austrian_clothes_trigger = yes
-                late_military_clothes_trigger = no
+                ulf_austrian_clothes_trigger = yes
+                ulf_late_military_clothes_trigger = no
                 OR = {
                     scope:character = {
                         has_role = general
@@ -61,8 +61,8 @@
             base = 0
             modifier = {
                 add = 12000
-                austrian_clothes_trigger = yes
-                late_military_clothes_trigger = yes
+                ulf_austrian_clothes_trigger = yes
+                ulf_late_military_clothes_trigger = yes
                 OR = {
                     scope:character = {
                         has_role = general
@@ -98,9 +98,9 @@
             base = 0
             modifier = {
                 add = 10002
-                austrian_clothes_pop_trigger = yes
+                ulf_austrian_clothes_pop_trigger = yes
                 officers_clothes_pop_trigger = yes
-                late_military_clothes_pop_trigger = no
+                ulf_late_military_clothes_pop_trigger = no
             }
         }
     }
@@ -126,9 +126,9 @@
             base = 0
             modifier = {
                 add = 12001
-                austrian_clothes_pop_trigger = yes
+                ulf_austrian_clothes_pop_trigger = yes
                 officers_clothes_pop_trigger = yes
-                late_military_clothes_pop_trigger = yes
+                ulf_late_military_clothes_pop_trigger = yes
             }
         }
     }
@@ -154,9 +154,9 @@
             base = 0
             modifier = {
                 add = 1001
-                austrian_clothes_pop_trigger = yes
+                ulf_austrian_clothes_pop_trigger = yes
                 soldier_clothes_pop_trigger = yes
-                late_military_clothes_pop_trigger = yes
+                ulf_late_military_clothes_pop_trigger = yes
             }
         }
     }
@@ -182,8 +182,8 @@
             base = 0
             modifier = {
                 add = 10001
-                austrian_clothes_trigger = yes
-                late_military_clothes_trigger = no
+                ulf_austrian_clothes_trigger = yes
+                ulf_late_military_clothes_trigger = no
                 OR = {
                     scope:character = {
                         has_role = admiral

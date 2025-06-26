@@ -85,12 +85,6 @@
             }
             accessory = {
                  mode = add
-                 gene = belts
-                 template = all_belts
-                 range = { 0 0.66 } # For the randomness to work correctly
-            }
-            accessory = {
-                 mode = add
                  gene = aus_sashes
                  template = austrian_sashes
                  range = { 0 1 } # For the randomness to work correctly
@@ -101,7 +95,7 @@
             modifier = {
                add = 10001
                 agitator_character_trigger = no
-                austrian_clothes_trigger = yes
+                ulf_austrian_clothes_trigger = yes
                 scope:character ?= {
                     age > define:NCharacters|ADULT_AGE
                     NOR = {
@@ -131,6 +125,7 @@
             }
         }
     }
+
     austrian_navy_accessories = {
         dna_modifiers = {
             accessory = {
@@ -151,7 +146,7 @@
             modifier = {
                add = 10001
                 agitator_character_trigger = no
-                austrian_clothes_trigger = yes
+                ulf_austrian_clothes_trigger = yes
                 scope:character ?= {
                     age > define:NCharacters|ADULT_AGE
                     NOR = {

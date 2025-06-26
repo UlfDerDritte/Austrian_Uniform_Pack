@@ -24,7 +24,7 @@ ulf_aus_beards = {
                 add = 102
                 OR = {
                     AND = {
-                        austrian_clothes_trigger = yes
+                        ulf_austrian_clothes_trigger = yes
                         scope:character ?= {
                             age > 18
                             is_historical = no
@@ -40,7 +40,7 @@ ulf_aus_beards = {
                         }
                     }
                     AND = {
-                        austrian_clothes_pop_trigger = yes
+                        ulf_austrian_clothes_pop_trigger = yes
                         OR = {
                             soldier_clothes_pop_trigger = yes
                             officers_clothes_pop_trigger = yes

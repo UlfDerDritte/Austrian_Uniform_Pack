@@ -1,4 +1,4 @@
-austrian_clothes_trigger = {
+ulf_austrian_clothes_trigger = {
 	scope:character ?= {
 		home_country ?= {
 			OR = {
@@ -11,12 +11,12 @@ austrian_clothes_trigger = {
 				}
 				is_subject_of = c:AUS
 				was_formed_from = AUS
-			}		
+			}
 		}
 	}
 }
 
-austrian_clothes_pop_trigger = {
+ulf_austrian_clothes_pop_trigger = {
 	scope:pop ?= {
 		home_country ?= {
 			OR = {
@@ -29,31 +29,31 @@ austrian_clothes_pop_trigger = {
 				}
 				is_subject_of = c:AUS
 				was_formed_from = AUS
-			}		
+			}
 		}
 	}
 }
 
-late_military_trigger = {
+ulf_late_military_trigger = {
 	OR = {
 		has_technology_researched = bolt_action_rifles
 		has_technology_researched = trench_works
 	}
 }
 
-late_military_clothes_trigger = {
+ulf_late_military_clothes_trigger = {
 	scope:character ?= {
 		owner ?= {
-			late_military_trigger = yes
+			ulf_late_military_trigger = yes
 		}
 	}
 }
 
-late_military_clothes_pop_trigger = {
+ulf_late_military_clothes_pop_trigger = {
 	scope:pop ?= {
 		owner ?= {
 			OR = {
-			    late_military_trigger = yes
+			    ulf_late_military_trigger = yes
 			}
 		}
 	}

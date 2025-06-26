@@ -1,6 +1,6 @@
 pdxmesh = {
 	name = "male_sash_european_01_mesh"
-	file = "male_sash_european_01.mesh"
+	file = "male_sash_european_01_old.mesh"
 
 	blend_shape = { id = "male_sash_european_01_bs_fat"                type = "male_sash_european_01_bs_fat.mesh" }
     blend_shape = { id = "male_sash_european_01_bs_gaunt"              type = "male_sash_european_01_bs_gaunt.mesh" }

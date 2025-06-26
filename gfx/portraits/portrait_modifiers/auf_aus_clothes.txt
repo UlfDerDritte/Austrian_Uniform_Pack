@@ -84,7 +84,7 @@
             base = 0
             modifier = {
                 add = 10001
-                austrian_clothes_trigger = yes
+                ulf_austrian_clothes_trigger = yes
                 scope:character ?= {
                     age > define:NCharacters|ADULT_AGE
                     OR = {
@@ -188,7 +188,7 @@
             base = 0
             modifier = {
                 add = 10002
-                austrian_clothes_trigger = yes
+                ulf_austrian_clothes_trigger = yes
                 scope:character ?= {
                     age > define:NCharacters|ADULT_AGE
                     AND = {
@@ -293,8 +293,8 @@
             modifier = {
                 add = 12000
                 has_dlc_feature = ep1_cosmetics
-                late_military_clothes_trigger = yes
-                austrian_clothes_trigger = yes
+                ulf_late_military_clothes_trigger = yes
+                ulf_austrian_clothes_trigger = yes
                 scope:character ?= {
                     age > define:NCharacters|ADULT_AGE
                     AND = {
@@ -383,14 +383,14 @@
                 add = 10000
                 OR = {
                     AND = {
-                        austrian_clothes_pop_trigger = yes
+                        ulf_austrian_clothes_pop_trigger = yes
                         OR = {
                             soldier_clothes_pop_trigger = yes
                             officers_clothes_pop_trigger = yes
                         }
                     }
                     AND = {
-                        austrian_clothes_trigger = yes
+                        ulf_austrian_clothes_trigger = yes
                         scope:character ?= {
                             age >= define:NCharacters|ADULT_AGE
                             has_role = general
@@ -492,16 +492,16 @@
                 has_dlc_feature = ep1_cosmetics
                 OR = {
                     AND = {
-                        late_military_clothes_pop_trigger = yes
-                        austrian_clothes_pop_trigger = yes
+                        ulf_late_military_clothes_pop_trigger = yes
+                        ulf_austrian_clothes_pop_trigger = yes
                         OR = {
                             soldier_clothes_pop_trigger = yes
                             officers_clothes_pop_trigger = yes
                         }
                     }
                     AND = {
-                        late_military_clothes_trigger = yes
-                        austrian_clothes_trigger = yes
+                        ulf_late_military_clothes_trigger = yes
+                        ulf_austrian_clothes_trigger = yes
                         scope:character ?= {
                             age >= define:NCharacters|ADULT_AGE
                             has_role = general
@@ -594,7 +594,7 @@
             base = 0
             modifier = {
                 add = 10000
-                austrian_clothes_trigger = yes
+                ulf_austrian_clothes_trigger = yes
                 scope:character ?= {
                     age >= define:NCharacters|ADULT_AGE
                     has_role = admiral
