@@ -112,9 +112,7 @@
                     OR = {
                         monarchy_clothes_trigger = yes
                         scope:character ?= {
-                            OR = {
-                                has_role = general
-                            }
+                            has_role = general
                         }
                         AND = {
                             has_role = politician
@@ -163,9 +161,7 @@
                     OR = {
                         monarchy_clothes_trigger = yes
                         scope:character ?= {
-                            OR = {
-                                has_role = admiral
-                            }
+                            has_role = admiral
                         }
                         AND = {
                             has_role = politician

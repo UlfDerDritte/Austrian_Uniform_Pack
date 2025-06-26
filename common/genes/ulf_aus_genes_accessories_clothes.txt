@@ -77,7 +77,7 @@
                 index = 0
                 male = {
                     1 = empty
-                    1 = male_sash_austrian #AUS
+                    1 = male_sash_austrian
                 }
 
                 female = {

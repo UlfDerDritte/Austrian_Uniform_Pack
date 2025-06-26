@@ -53,8 +53,8 @@
             accessory = {
                 mode = add
                 gene = aus_headgear
-                template = austrian_late_military_headgear
-                accessory = male_headgear_austrian_feldkappe_01
+                template = austrian_late_military_officer_headgear
+                range = { 0 1 }
             }
         }
         weight = {
