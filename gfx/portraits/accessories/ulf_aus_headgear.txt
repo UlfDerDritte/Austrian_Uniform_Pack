@@ -1,0 +1,20 @@
+﻿
+male_headgear_austrian_military_02 = {
+	set_tags ="cap1"
+	entity = { required_tags = ""					shared_pose_entity = head		entity = "male_headgear_austrian_military_02_entity" }
+}
+
+male_headgear_austrian_military_03 = {
+	set_tags ="cap1"
+	entity = { required_tags = ""					shared_pose_entity = head		entity = "male_headgear_austrian_military_03_entity" }
+}
+
+male_headgear_austrian_feldkappe_01 = {
+	set_tags ="cap1"
+	entity = { required_tags = ""					shared_pose_entity = head		entity = "male_headgear_austrian_feldkappe_01_entity" }
+}
+
+male_headgear_austrian_stahlhelm_01 = {
+	set_tags ="no_hair"
+	entity = { required_tags = ""					shared_pose_entity = head		entity = "male_headgear_austrian_stahlhelm_01_entity" }
+}

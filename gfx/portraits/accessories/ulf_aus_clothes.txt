@@ -1,0 +1,61 @@
+﻿## COATS
+
+male_coat_austrian_03 = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""					shared_pose_entity = torso		entity = "male_coat_austrian_03_entity" }
+}
+
+male_coat_austrian_navy_03 = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""					shared_pose_entity = torso		entity = "male_coat_austrian_navy_03_entity" }
+}
+
+male_coat_austrian_06 = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""					shared_pose_entity = torso		entity = "male_coat_austrian_06_entity" }
+}
+
+male_coat_austrian_navy_06 = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""					shared_pose_entity = torso		entity = "male_coat_austrian_navy_06_entity" }
+}
+
+male_coat_austrian_10 = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""					shared_pose_entity = torso		entity = "male_coat_austrian_10_entity" }
+}
+
+male_coat_austrian_navy_11 = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""					shared_pose_entity = torso		entity = "male_coat_austrian_navy_11_entity" }
+}
+
+male_coat_late_austrian_military_01 = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""					shared_pose_entity = torso		entity = "male_coat_late_austrian_military_01_entity" }
+}
+
+## Legwear
+
+male_legwear_late_austrian_military_01 = {
+	set_tags = "shrink_legs"
+	entity = { required_tags = ""					shared_pose_entity = torso		entity = "male_legwear_late_austrian_military_01_entity" }
+}
+
+## EPAULETTES
+
+male_epaulettes_late_austrian_military_01 = {
+	entity = { required_tags = ""					shared_pose_entity = torso		entity = "male_epaulettes_late_austrian_military_01_entity" }
+}
+
+## SASHES
+
+male_sash_austrian = {
+	entity = { required_tags = ""					shared_pose_entity = torso		entity = "male_sash_austrian_01_entity" }
+}
+
+## NECKLACES
+
+male_necklace_golden_fleece = {
+	entity = { required_tags = ""					shared_pose_entity = torso		entity = "male_necklace_golden_fleece_entity" }
+}
