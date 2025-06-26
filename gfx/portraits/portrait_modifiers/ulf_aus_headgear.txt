@@ -6,9 +6,17 @@
 
     austrian_military_headgear = {
         dna_modifiers = {
+            ### REMOVE
             accessory = {
                 mode = add
                 gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+            ### ADD
+            accessory = {
+                mode = add
+                gene = aus_headgear
                 template = austrian_military_headgear
                 range = { 0 1 } # For the randomness to work correctly
             }
@@ -34,11 +42,19 @@
 
     austrian_military_headgear_late = {
         dna_modifiers = {
+            ### REMOVE
             accessory = {
                 mode = add
                 gene = headgear
-                template = austrian_military_headgear_ww1
-                range = { 0.2 0.2 } # For the randomness to work correctly
+                template = no_headgear
+                range = { 0 1 }
+            }
+            ### ADD
+            accessory = {
+                mode = add
+                gene = aus_headgear
+                template = austrian_late_military_headgear
+                accessory = male_headgear_austrian_feldkappe_01
             }
         }
         weight = {
@@ -63,9 +79,17 @@
 
     austrian_officers_headgear = {
         dna_modifiers = {
+            ### REMOVE
             accessory = {
                 mode = add
                 gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+            ### ADD
+            accessory = {
+                mode = add
+                gene = aus_headgear
                 template = austrian_military_headgear
                 range = { 0 1 } # For the randomness to work correctly
             }
@@ -83,10 +107,18 @@
 
     austrian_officers_headgear_late = {
         dna_modifiers = {
+            ### REMOVE
             accessory = {
                 mode = add
                 gene = headgear
-                template = austrian_military_headgear_ww1
+                template = no_headgear
+                range = { 0 1 }
+            }
+            ### ADD
+            accessory = {
+                mode = add
+                gene = aus_headgear
+                template = austrian_late_military_headgear
                 range = { 0 0.6 } # For the randomness to work correctly
             }
         }
@@ -101,12 +133,20 @@
         }
     }
 
-    austrian_soldiers_headgear_ww1 = {
+    austrian_soldiers_headgear_late = {
         dna_modifiers = {
+            ### REMOVE
             accessory = {
                 mode = add
                 gene = headgear
-                template = austrian_military_headgear_ww1
+                template = no_headgear
+                range = { 0 1 }
+            }
+            ### ADD
+            accessory = {
+                mode = add
+                gene = aus_headgear
+                template = austrian_late_military_headgear
                 range = { 0 1 } # For the randomness to work correctly
             }
         }

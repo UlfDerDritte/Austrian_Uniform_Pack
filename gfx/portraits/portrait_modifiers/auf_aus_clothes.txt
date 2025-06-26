@@ -5,32 +5,73 @@
 
     austrian_clothes = {
         dna_modifiers = {
+            ### REMOVE
+            accessory = {
+               mode = add
+               gene = top_layer
+               template = no_top_layer
+               range = { 0 1 }
+            }
             accessory = {
                 mode = add
                 gene = coats
-                template = austrian_coats
-                range = { 0 0.5 } # For the randomness to work correctly
+                template  = no_coat
+                range = { 0 1 }
             }
-
-            # no aiguillettes because they don't work with double-breasted coats
-            #accessory = {
-            #    mode = add
-            #    gene = aiguillettes
-            #    template = all_aiguillettes
-            #    range = { 0 1 } # For the randomness to work correctly
-            #}
-
             accessory = {
                 mode = add
                 gene = legwear
-                template = austrian_legwear
-                accessory = male_legwear_european_01_red
+                template = no_legwear
+                range = { 0 1 }
             }
             accessory = {
                 mode = add
                 gene = epaulettes
                 template = no_epaulette
-                range = { 0.1 0.2 } # For the randomness to work correctly
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = aiguillettes
+                template  = no_aiguillettes
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = belts
+                template  = no_belt
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = medals
+                template = no_medals
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = sashes
+                template = no_sash
+                range = { 0 1 }
+            }
+            ### ADD
+            accessory = {
+                mode = add
+                gene = aus_coats
+                template = austrian_coats
+                range = { 0 0.5 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = aus_legwear
+                template = austrian_legwear
+                accessory = male_legwear_european_01_red
             }
             accessory = {
                 mode = add
@@ -48,13 +89,10 @@
                     age > define:NCharacters|ADULT_AGE
                     OR = {
                         AND = {
-                            is_ruler = yes
-                            home_country ?= {
-                                has_law = law_type:law_monarchy
+                            OR = {
+                                is_ruler = yes
+                                is_heir = yes
                             }
-                        }
-                        AND = {
-                            is_heir = yes
                             home_country ?= {
                                 has_law = law_type:law_monarchy
                             }
@@ -71,24 +109,71 @@
 
     austrian_monarch = {
         dna_modifiers = {
+            ### REMOVE
+            accessory = {
+               mode = add
+               gene = top_layer
+               template = no_top_layer
+               range = { 0 1 }
+            }
             accessory = {
                 mode = add
                 gene = coats
-                template = austrian_coats
-                accessory = male_coat_austrian_06
+                template  = no_coat
+                range = { 0 1 }
             }
-
-            # no aiguillettes because they don't work with double-breasted coats
-            #accessory = {
-            #    mode = add
-            #    gene = aiguillettes
-            #    template = all_aiguillettes
-            #    range = { 0 1 } # For the randomness to work correctly
-            #}
-
             accessory = {
                 mode = add
                 gene = legwear
+                template = no_legwear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = epaulettes
+                template = no_epaulette
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = aiguillettes
+                template  = no_aiguillettes
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = belts
+                template  = no_belt
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = medals
+                template = no_medals
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = sashes
+                template = no_sash
+                range = { 0 1 }
+            }
+            ### ADD
+            accessory = {
+                mode = add
+                gene = aus_coats
+                template = austrian_coats
+                accessory = male_coat_austrian_06
+            }
+            accessory = {
+                mode = add
+                gene = aus_legwear
                 template = austrian_legwear
                 accessory = male_legwear_european_01_red
             }
@@ -96,7 +181,7 @@
                 mode = add
                 gene = belts
                 template = generic_belts
-                range = { 0 0.49 } # For the randomness to work correctly
+                accessory = male_belt_generic_01
             }
         }
         weight = {
@@ -106,18 +191,13 @@
                 austrian_clothes_trigger = yes
                 scope:character ?= {
                     age > define:NCharacters|ADULT_AGE
-                    OR = {
-                        AND = {
+                    AND = {
+                        OR = {
                             is_ruler = yes
-                            home_country ?= {
-                                has_law = law_type:law_monarchy
-                            }
-                        }
-                        AND = {
                             is_heir = yes
-                            home_country ?= {
-                                has_law = law_type:law_monarchy
-                            }
+                        }
+                        home_country ?= {
+                            has_law = law_type:law_monarchy
                         }
                     }
                 }
@@ -127,23 +207,73 @@
 
     austrian_clothes_late = {
         dna_modifiers = {
+            ### REMOVE
+            accessory = {
+               mode = add
+               gene = top_layer
+               template = no_top_layer
+               range = { 0 1 }
+            }
             accessory = {
                 mode = add
                 gene = coats
+                template  = no_coat
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = no_legwear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = epaulettes
+                template = no_epaulette
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = aiguillettes
+                template  = no_aiguillettes
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = belts
+                template  = no_belt
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = medals
+                template = no_medals
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = sashes
+                template = no_sash
+                range = { 0 1 }
+            }
+            ### ADD
+            accessory = {
+                mode = add
+                gene = aus_coats
                 template = male_coat_late_austrian
                 accessory = male_coat_late_austrian_military_01
             }
             accessory = {
                 mode = add
-                gene = epaulettes
-                template = late_military_epaulettes
+                gene = aus_epaulettes
+                template = late_military_epaulettes_austrian
                 accessory = male_epaulettes_late_austrian_military_01
-            }
-            accessory = {
-                mode = add
-                gene = aiguillettes
-                template = no_aiguillettes
-                range = { 0 1 } # For the randomness to work correctly
             }
             accessory = {
                 mode = add
@@ -153,14 +283,8 @@
             }
             accessory = {
                 mode = add
-                gene = sashes
-                template = no_sash
-                range = { 1 1 } # For the randomness to work correctly
-            }
-            accessory = {
-                mode = add
-                gene = legwear
-                template = european_late_military_legwear
+                gene = aus_legwear
+                template = european_late_military_legwear_austrian
                 accessory = male_legwear_late_austrian_military_01
             }
         }
@@ -183,23 +307,73 @@
     }
     austrian_soldier_clothes = {
         dna_modifiers = {
+            ### REMOVE
+            accessory = {
+               mode = add
+               gene = top_layer
+               template = no_top_layer
+               range = { 0 1 }
+            }
             accessory = {
                 mode = add
                 gene = coats
-                template = austrian_coats
-                range = { 0 0.5 } # For the randomness to work correctly
+                template  = no_coat
+                range = { 0 1 }
             }
             accessory = {
                 mode = add
                 gene = legwear
-                template = austrian_legwear
-                accessory = male_legwear_european_01_red
+                template = no_legwear
+                range = { 0 1 }
             }
             accessory = {
                 mode = add
                 gene = epaulettes
                 template = no_epaulette
-                range = { 0.1 0.2 } # For the randomness to work correctly
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = aiguillettes
+                template  = no_aiguillettes
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = belts
+                template  = no_belt
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = medals
+                template = no_medals
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = sashes
+                template = no_sash
+                range = { 0 1 }
+            }
+            ### ADD
+            accessory = {
+                mode = add
+                gene = aus_coats
+                template = austrian_coats
+                range = { 0 0.5 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = aus_legwear
+                template = austrian_legwear
+                accessory = male_legwear_european_01_red
             }
         }
 
@@ -229,23 +403,73 @@
 
     austrian_soldier_clothes_late = {
         dna_modifiers = {
+            ### REMOVE
+            accessory = {
+               mode = add
+               gene = top_layer
+               template = no_top_layer
+               range = { 0 1 }
+            }
             accessory = {
                 mode = add
                 gene = coats
+                template  = no_coat
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = no_legwear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = epaulettes
+                template = no_epaulette
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = aiguillettes
+                template  = no_aiguillettes
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = belts
+                template  = no_belt
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = medals
+                template = no_medals
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = sashes
+                template = no_sash
+                range = { 0 1 }
+            }
+            ### ADD
+            accessory = {
+                mode = add
+                gene = aus_coats
                 template = male_coat_late_austrian
                 accessory = male_coat_late_austrian_military_01
             }
             accessory = {
                 mode = add
-                gene = epaulettes
-                template = late_military_epaulettes
+                gene = aus_epaulettes
+                template = late_military_epaulettes_austrian
                 accessory = male_epaulettes_late_austrian_military_01
-            }
-            accessory = {
-                mode = add
-                gene = aiguillettes
-                template = no_aiguillettes
-                range = { 0 1 } # For the randomness to work correctly
             }
             accessory = {
                 mode = add
@@ -255,14 +479,8 @@
             }
             accessory = {
                 mode = add
-                gene = sashes
-                template = no_sash
-                range = { 1 1 } # For the randomness to work correctly
-            }
-            accessory = {
-                mode = add
-                gene = legwear
-                template = european_late_military_legwear
+                gene = aus_legwear
+                template = european_late_military_legwear_austrian
                 accessory = male_legwear_late_austrian_military_01
             }
         }

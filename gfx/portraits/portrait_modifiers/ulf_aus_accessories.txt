@@ -46,7 +46,7 @@
             }
             accessory = {
                  mode = add
-                 gene = sashes
+                 gene = aus_sashes
                  template = austrian_sashes
                  range = { 0.9 1 } # For the randomness to work correctly
             }
@@ -97,7 +97,7 @@
             }
             accessory = {
                  mode = add
-                 gene = sashes
+                 gene = aus_sashes
                  template = austrian_sashes
                  range = { 0 1 } # For the randomness to work correctly
             }
