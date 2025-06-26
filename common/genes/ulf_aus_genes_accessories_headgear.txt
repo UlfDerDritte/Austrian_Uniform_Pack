@@ -42,6 +42,21 @@
 				boy = male
 				girl = female
 			}
+
+			austrian_late_military_officer_headgear = {
+				index = 2
+				male = {
+					1 = 0
+					3 = male_headgear_austrian_feldkappe_01
+					5 = male_headgear_austrian_kepi_01
+				}
+
+				female = {
+					#
+				}
+				boy = male
+				girl = female
+			}
 		}
 	}
 }

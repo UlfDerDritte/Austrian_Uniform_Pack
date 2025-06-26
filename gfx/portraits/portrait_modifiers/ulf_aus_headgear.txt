@@ -1,7 +1,7 @@
 ﻿ulf_aus_headgear = {
-	usage = game
-	selection_behavior = weighted_random
-	fallback = no_headgear
+    usage = game
+    selection_behavior = weighted_random
+    fallback = no_headgear
 
 
     austrian_military_headgear = {

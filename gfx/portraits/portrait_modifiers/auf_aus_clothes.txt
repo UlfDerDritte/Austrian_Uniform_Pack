@@ -1,16 +1,16 @@
 ﻿ulf_aus_clothes = {
-	usage = game
-	selection_behavior = weighted_random
-	fallback = default_clothes
+    usage = game
+    selection_behavior = weighted_random
+    fallback = default_clothes
 
     austrian_clothes = {
         dna_modifiers = {
             ### REMOVE
             accessory = {
-               mode = add
-               gene = top_layer
-               template = no_top_layer
-               range = { 0 1 }
+                mode = add
+                gene = top_layer
+                template = no_top_layer
+                range = { 0 1 }
             }
             accessory = {
                 mode = add
@@ -111,10 +111,10 @@
         dna_modifiers = {
             ### REMOVE
             accessory = {
-               mode = add
-               gene = top_layer
-               template = no_top_layer
-               range = { 0 1 }
+                mode = add
+                gene = top_layer
+                template = no_top_layer
+                range = { 0 1 }
             }
             accessory = {
                 mode = add
@@ -209,10 +209,10 @@
         dna_modifiers = {
             ### REMOVE
             accessory = {
-               mode = add
-               gene = top_layer
-               template = no_top_layer
-               range = { 0 1 }
+                mode = add
+                gene = top_layer
+                template = no_top_layer
+                range = { 0 1 }
             }
             accessory = {
                 mode = add
@@ -309,10 +309,10 @@
         dna_modifiers = {
             ### REMOVE
             accessory = {
-               mode = add
-               gene = top_layer
-               template = no_top_layer
-               range = { 0 1 }
+                mode = add
+                gene = top_layer
+                template = no_top_layer
+                range = { 0 1 }
             }
             accessory = {
                 mode = add
@@ -405,10 +405,10 @@
         dna_modifiers = {
             ### REMOVE
             accessory = {
-               mode = add
-               gene = top_layer
-               template = no_top_layer
-               range = { 0 1 }
+                mode = add
+                gene = top_layer
+                template = no_top_layer
+                range = { 0 1 }
             }
             accessory = {
                 mode = add
@@ -516,10 +516,10 @@
         dna_modifiers = {
             ### REMOVE
             accessory = {
-               mode = add
-               gene = top_layer
-               template = no_top_layer
-               range = { 0 1 }
+                mode = add
+                gene = top_layer
+                template = no_top_layer
+                range = { 0 1 }
             }
             accessory = {
                 mode = add
