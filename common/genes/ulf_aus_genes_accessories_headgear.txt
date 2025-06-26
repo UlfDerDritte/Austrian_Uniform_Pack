@@ -47,8 +47,8 @@
 				index = 2
 				male = {
 					1 = 0
-					3 = male_headgear_austrian_feldkappe_01
-					2 = male_headgear_austrian_kepi_01
+					2 = male_headgear_austrian_feldkappe_01
+					4 = male_headgear_austrian_kepi_01
 				}
 
 				female = {
